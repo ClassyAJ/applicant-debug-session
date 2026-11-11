@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "example",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "src.example:app",
+                "--host", "127.0.0.1",
+                "--port", "1338",
+                "--http", "httptools"
+            ],
+            "jinja": true,
+            "justMyCode": true,
+            "console": "integratedTerminal"
+        }
+    ]
+}
